@@ -9,7 +9,7 @@ function getButtonValue(value) {
 
 }
 
-function getOperation(operationValue) {    //index of is validating if the operator is not the first "number" of the operation like "-25-25"
+function getOperation(operationValue) { 
     
     if(displayArray.includes(operator) && displayArray.indexOf(operator) > 0){ 
         makeOperation()
@@ -90,7 +90,7 @@ function makeOperation() {
     let index = displayArray.indexOf(operator);
 
     if (displayArray[0] === '-' && index === 0) {
-        index = displayArray.indexOf(operator, 1); // Start the search after the first character
+        index = displayArray.indexOf(operator, 1); 
     } 
     
     
